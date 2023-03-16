@@ -9,6 +9,11 @@ modules:
   - name: hdi_CS1HDIBdb
     properties:
       TARGET_CONTAINER: ~{hdi-container-name}
+  - name: cross-container-service-1
+    group: SERVICE_REPLACEMENTS
+    properties:
+      key: ServiceName_1
+      service: ~{the-service-name}
 resources:
 - name: hdi_CS1HDIBdb
   type: com.sap.xs.hdi-container
@@ -17,3 +22,9 @@ resources:
       schema: CS1B_schema
   properties:
     hdi-container-name: ${service-name}
+- name: cross-container-service-1
+  type: org.cloudfoundry.existing-service
+  parameters:
+    service-name: hdi_CS1HDIAdb
+  properties:
+    the-service-name: ${service-name}
