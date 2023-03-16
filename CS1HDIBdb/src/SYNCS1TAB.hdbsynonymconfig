@@ -1,0 +1,8 @@
+{
+    "SYNCS1TAB": {
+        "target": {
+            "schema.configure": "CS1HDIASI/schema",
+            "object": "CS1TAB"
+        }
+    }
+}
