@@ -5,6 +5,8 @@ modules:
 - name: CS1HDIBdb
   type: hdb
   path: CS1HDIBdb
+  build-parameters:
+    ignore: ["node_modules/"]
   requires:
   - name: hdi_CS1HDIBdb
     properties:
