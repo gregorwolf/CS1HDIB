@@ -1,7 +1,7 @@
 {
     "SYNCS1TAB": {
         "target": {
-            "schema.configure": "CS1HDIASI/schema",
+            "schema.configure": "ServiceName_1/schema",
             "object": "CS1TAB"
         }
     }
